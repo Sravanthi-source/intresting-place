@@ -14,11 +14,11 @@
   <img src="images/logo3.png" alt="Logo">
 </a>
         <ul>
-            <a href="#page2">places</a>
-            <a href="#page3">food</a>
-            <a href="#page4">Resorts</a>
+            <a href="#page2" id="a1" onclick="navActive(0)">places</a>
+            <a href="#page3" id="a2" onclick="navActive(1)">food</a>
+            <a href="#page4" id="a3" onclick="navActive(2)" >Resorts</a>
           
-            <a href="#page5">contact</a>
+            <a href="#page5" id="a4" onclick="navActive(3)">contact</a>
         </ul>
     </nav>
     
@@ -152,8 +152,30 @@
 
 
   </div>
+
  
  </footer>
+ <script>
+  let n1 = document.getElementById("a1");
+  let n2 = document.getElementById("a2");
+  let n3 = document.getElementById("a3");
+  let n4 = document.getElementById("a4");
+
+  let navArr = [n1, n2, n3, n4];
+
+  function navActive(index) {
+  
+    for (let i = 0; i < navArr.length; i++) {
+      navArr[i].classList.remove("active");
+    }
+
+
+    navArr[index].classList.add("active");
+  }
+</script>
+
+
+ 
  
     
 </body>
