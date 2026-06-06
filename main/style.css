@@ -54,7 +54,11 @@ nav a{
     margin-left: 80px;
 }
  .active{
-    background: #00796b;
+      background: linear-gradient(to left, #7de9f77c,
+   rgba(245, 245, 245, 0.518));
+   color: black;
+   padding: 8px;
+   border-radius: 8px;
 }
 
 nav a img{
